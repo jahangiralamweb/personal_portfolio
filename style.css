@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,900;1,900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,900;1,900&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -392,6 +392,70 @@ section {
 .btn:nth-child(2):hover {
     color: var(--bg-color);
 }
+
+
+/*my btn----------------------------*/
+
+.btn-box .btnes {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 45px;
+    background: var(--bg-color);
+    color: var(--hover-color);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: .6s;
+    box-shadow: var(--neon-box-shadow);
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    border: 1px solid var(--bg-color);
+}
+
+.btnes:hover {
+    color: var(--bg-color);
+}
+
+.btnes::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--hover-color);
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    transition: .4s;
+}
+
+.btnes:hover::before {
+    width: 100%;
+}
+
+.btnes:nth-child(2) {
+    background: var(--bg-color);
+    color: var(--bg-color);
+}
+
+.btnes:nth-child(2) {
+    background: var(--hover-color);
+    color: var(--hover-color);
+}
+
+.btnes:nth-child(2)::before {
+    background: var(--bg-color);
+}
+
+.btnes:nth-child(2):hover {
+    color: var(--hover-color);
+}
+
+
+/*my btn end----------------------------*/
 
 .social-icons {
     margin-top: 3.5rem;
